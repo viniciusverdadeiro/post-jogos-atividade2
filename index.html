@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forms - jogos</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/post.js" defer> </script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de jogos</h1>
+            <p>Preencha os dados abaixo.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Novo jogo</h2>
+
+
+                <form id="form-jogo" method="post">
+                    <label for="title">Nome do jogo: </label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required/>
+                    
+                    <label for="genero">Genero: </label>
+                    <input id="genero" name="genero" type="text" required/>
+
+                    <label for="plataforma">Plataforma: </label>
+                    <input id="plataforma" name="plataforma" type="text" required/>
+
+                    <label for="ano_lancamento">Ano de lançamento: </label>
+                    <input id="ano_lancamento" name="ano_lancamento" type="text" required/>
+
+                    <label for="desenvolvedora">Desenvolvedora: </label>
+                    <input id="desenvolvedora" name="desenvolvedora" type="text" required/>
+                    
+                    <label for="imageUrl">URL da imagem: </label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+
+                    <button type="submit">Cadrastro de jogo</button>
+                </form> 
+                <p id="resposta"></p>
+            </section>    
+        </main>
+    </body>
+    <footer>Criado para praticas de HTML</footer>
+</html>
+
+
+      
