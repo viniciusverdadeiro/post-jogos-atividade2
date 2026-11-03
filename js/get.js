@@ -20,7 +20,6 @@ async function buscarJogos() {
 
     const resultado = await retorno.json();
 
-    // Limpa a mensagem de carregando se encontrar jogos
     resposta.textContent = resultado.data.length === 0 ? "Nenhum jogo encontrado." : "";
 
     for (const jogo of resultado.data) {
