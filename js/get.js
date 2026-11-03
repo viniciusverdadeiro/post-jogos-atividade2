@@ -30,11 +30,16 @@ async function buscarJogos() {
       card.querySelector(".plataforma").textContent = jogo.plataforma;
       card.querySelector(".ano_lancamento").textContent = jogo.ano_lancamento;
       card.querySelector(".desenvolvedora").textContent = jogo.desenvolvedora;
-      
+
       const imagem = card.querySelector("img");
+      const semImagem = card.querySelector(".sem-imagem");
+
       if (jogo.imageUrl) {
         imagem.src = jogo.imageUrl;
         imagem.alt = jogo.title;
+        if (semImagem) {
+          semImagem.remove();
+        }
         imagem.onerror = () => imagem.remove();
       } else {
         imagem.remove();
